@@ -42,3 +42,7 @@ cli = ["structopt", "clap", "simplelog"]
 system-llvm = ["cli", "lib", "llvm-sys"]
 rust-llvm = ["cli", "lib", "llvm-proxy"]
 default = ["rust-llvm"]
+
+[patch.crates-io]
+libloading = { path = "../../nagisa/rust_libloading" }
+aya-rustc-llvm-proxy = { path = "../rustc-llvm-proxy" }
